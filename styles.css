@@ -3,16 +3,6 @@ body {
     text-align: center;
 
 }
-
-@font-face {
-    font-family: "Researcher";
-
-    src:url("/Users/student/Downloads/researcher/ttf") format('truetype');
-}
-
-.test {
-	font-family: "Researcher";
-}
 img {
     width: 350px;
 }
