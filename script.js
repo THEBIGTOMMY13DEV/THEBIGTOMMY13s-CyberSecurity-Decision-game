@@ -2,8 +2,10 @@
 
 let ending1="";
 let ending2="";
-
-
+let opening1="";
+let opening2="";
+let button2="";
+let button1="";
 
 
 
