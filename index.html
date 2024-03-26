@@ -4041,11 +4041,12 @@
   return S.noConflict = function (e) {
     return C.$ === S && (C.$ = Gt), e && C.jQuery === S && (C.jQuery = Vt), S;
   }, "undefined" == typeof e && (C.jQuery = C.$ = S), S;
-});</script><style>/* Feel free to change any of the styling below!*/
-body {
+});</script><style>body {
     text-align: center;
-
+    background-color: black;
+    color: white;
 }
+
 img {
     width: 350px;
 }
@@ -4069,72 +4070,152 @@ p {
 
 button {
     height: 40px;
+    color: white;
+    background-color: black;
 }
 
 
 h1 {
     font-size: 50px;
-    color: black;
+    color: white;
 }
 
-/* When someone enters your game, you only want them to see the opening and the option buttons. The code below will use the display property to hide certain parts of the story. Remove the comments from the code below when you're ready for that step!*/
 
-/* 
-.story-opening{
-   display:none;
-}
-*/
 
-/* 
-.buttons{
-   display:none;
+.story-opening {
+    display: none;
 }
-*/
 
-/* 
-.open-one-screen{
-   display:none;
-}
-*/
 
-/* 
-.open-two-screen{
-   display:none;
-}
-*/
 
-/* 
-.open-one-end{
-   display:none;
+.buttons {
+    display: none;
 }
-*/
 
-/* 
-.open-two-end{
-   display:none;
+
+
+.option-one-screen {
+    display: none;
 }
-*/</style></head>
+
+
+
+.option-two-screen {
+    display: none;
+}
+
+
+
+.option-one-end {
+    display: none;
+}
+
+
+
+.option-two-end {
+    display: none;
+}
+
+.option-one {
+    display: none;
+}
+
+.option-two {
+    display: none;
+}
+
+.startbutton {
+    height: 50px;
+    color: white;
+    background-color: black;
+    font-size: 50px;
+    text-align: center;
+}
+
+.startimage {
+    height: auto;
+    width: auto;
+}
+
+.gameover{
+    display: none;
+}
+
+.option-three-screen {
+    display: none;
+}
+
+.easy-route-screen {
+    display: none;
+}
+
+.hard-route-screen {
+    display: none;
+}
+
+.hard-route-screen1 {
+    display: none;
+}</style></head>
     <body>
-        <!--Between lines 8-12, put the opening of your story-->
         <div class="title">Infiltration: A Cybersecurity Challenge</div>
         <div class="story-opening">
-            <img src="https://cdn.glitch.global/9d066a26-dbcb-4aa3-b1af-3cd59e251b0c/placeholder.jpeg?v=1657576139439">
-            <h1>Your Job by an anonymous government worker from the national security agency and from the department of defense is to stop the hacker or become the hacker to save or destroy the national security agency's database and by doing that the national security agency will gather analysis on how to protect or prevent another data breach.</h1>
+
+            <h1 class="option-one-text">Your Job by an anonymous government worker from the national security agency and from the department of defense is to stop the hacker or become the hacker to save or destroy the national security agency's database and by doing that the national security agency will gather analysis on how to protect or prevent another data breach.</h1>
         </div>
-        <!--Change the text of the buttons to the options relevant to your story!-->
+
+        <div class="startopening">
+            <img class="startimage" src="https://positivethinking.tech/wp-content/uploads/2022/02/CoverYoutube_MotionCyberSecurity.png">
+            <form>
+                <label for="username">Enter A Username Here:</label>
+                <input type="text" id="username" name="username"><br>
+                <br>
+
+            </form>
+            <button class="startbutton">Ready to Start the Game?</button>
+
+        </div>
         <div class="buttons">
             <button class="option-one">Become The Hacker?</button>
             <button class="option-two">Become the Cyber Security Specialist?</button>
         </div>
         <!--Between lines 19-22, put the part of the story the user will see if they picked option one-->
         <div class="option-one-screen">
-            <h1>You are a hacker recruited by the Department of Defense and their is a cyber attack occuring in the mainframe of the nsa your job is to stop this hacker from compromising the NSA's secrets.</h1>
-            <img src="https://cdn.glitch.global/9d066a26-dbcb-4aa3-b1af-3cd59e251b0c/placeholder.jpeg?v=1657576139439">
+            <h1>You are a hacker recruited by the Department of Defense and their is a cyber attack occuring in the mainframe of the nsa your job is to stop this hacker from compromising the NSA's secrets,are you up for the challenge?</h1>
+            <button class="option-one-screen-button1">Yes?</button>
+            <button class="option-one-screen-button2">No?</button>
+            <img src="https://www.dfs.ny.gov/sites/default/files/media/2022/01/iStock-901609212_cyber_security.jpg">
+
         </div>
         <!--Between lines 24-27, put the part of the story the user will see if they picked option two-->
         <div class="option-two-screen">
-            <h1>Your mission is to protect the NSA’s secured documents on an online database are you up for the challenge? Yes or no</h1>
-            <img src="https://cdn.glitch.global/9d066a26-dbcb-4aa3-b1af-3cd59e251b0c/placeholder.jpeg?v=1657576139439">
+            <h1>Your mission is to protect the NSA’s secured documents on an online database are you up for the challenge?</h1>
+            <img src="https://media.wired.com/photos/59326fb2edfced5820d1066c/master/w_1600%2Cc_limit/1-jan-3-2014-fisa-order-no-telco-names.jpg">
+            <div class="option-two-buttons">
+                <button class="option-two-screen-button1">Yes?</button>
+                <button class="option-two-screen-button2">No?</button>
+            </div>
+        </div>
+        <div class="option-three-screen">
+            <h1>You Encounter A flaw in the system Do you want to go the Easy Route Or the Extremely hard route?</h1>
+            <button class="option-three-screen-button1">Take The Easy Route?</button>
+            <button class="option-three-screen-button2">Take The Hard Route?</button>
+
+        </div>
+        <div id="hard-route-screen" class="hard-route-screen">
+            <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i1cefn5pA62w/v0/-1x-1.jpg">
+            <h1>You Go inside the Nsa's security building where the database is located and You have an option to go inside as a hacker man or as a staff member. Which Do You Choose? </h1>
+            <button id="buttonfunction" onclick="setTimeout(delayAndChange, 3000);">Try it</button>
+            <button class="hard-route-screen-button1">Go in the building as a Masked hacker?</button>
+            <button id="hardroutebutton" class="hard-route-screen-button2">Go Disguise as a Staff of an Nsa Member?</button>
+
+        </div>
+        <div id="hard-route-screen1" class="hard-route-screen1">
+            <h1>You Go inside the Nsa's security building as a staff member. You Walk to the server room and get your laptop out and successfully extract the documents that the nsa has been hiding Good Job :) </h1>
+        </div>
+        <div class="hard-route-screen2">
+        </div>
+        <div class="easy-route-screen">
+            <h1>You Use Kali Linux to find A vulnerability in one of the Nsa's secure servers and ssh into it and get the files successfully! Good Job Hacker:) </h1>
         </div>
         <!--Between lines 29-32, put the end of the story if the user chose option 1-->
         <div class="option-one-end">
@@ -4145,30 +4226,104 @@ h1 {
         <div class="option-two-end">
             <h1>You have not gotten the NSA’s secret documents and You Have successfully completed the hacker mission of getting the NSA’s documents.</h1>
             <img src="https://cdn.glitch.global/9d066a26-dbcb-4aa3-b1af-3cd59e251b0c/placeholder.jpeg?v=1657576139439">
+            <div id="gameover" class="gameover">
+                <h1>Game is over you have won! </h1>
+                <img class="gameover-image" src="https://static.vecteezy.com/system/resources/thumbnails/014/894/538/small/8-bit-pixel-text-game-over-background-icon-for-game-assets-in-illustrations-vector.jpg">
+            </div>
         </div>
     
 <script>
 /*__POPCODESTART__*/
-/* Declare variables below to save the different sections (divs) of your story */
-var ending1 = "";
-var ending2 = "";
-var opening1 = "";
-var opening2 = "";
-var button2 = "";
-var button1 = "";
-/* When you're ready to make event handlers, uncomment the code below. Then fill in the blanks with the correct variables!
-INSERT_VARIABLE.onclick=function(){
+var ending1 = document.querySelector(".option-one-end");
+var ending2 = document.querySelector(".option-two-end");
+var option1screen = document.querySelector(".option-one-screen");
+var option2screen = document.querySelector(".option-two-screen");
+var storyopening1 = document.querySelector(".story-opening");
+var startopening = document.querySelector(".startopening");
+var startbutton1 = document.querySelector(".startbutton");
+var option1button = document.querySelector(".option-one");
+var option2button = document.querySelector(".option-two");
+var gameendingscreen = document.querySelector(".gameover");
+var inputusername = document.querySelector("input");
+var username;
+var optionOneText = document.querySelector(".option-one-text");
+var controlledbutton = document.querySelector(".buttons");
+var option2screenbutton1 = document.querySelector(".option-two-screen-button1");
+var optiontwoscreenbutton2 = document.querySelector(".option-two-screen-button2");
+var optiononescreenbutton1 = document.querySelector(".option-one-screen-button1");
+var optiononescreenbutton2 = document.querySelector(".option-one-screen-button2");
+var option3screen = document.querySelector(".option-three-screen");
+var option3screenbutton1 = document.querySelector(".option-three-screen-button1");
+var option3screenbutton2 = document.querySelector(".option-three-screen-button2");
+var easyroutescreen = document.querySelector(".easy-route-screen");
+var hardroutescreen = document.querySelector(".hard-route-screen");
+var hardroutescreenbutton1 = document.querySelector(".hard-route-screen-button1");
+var hardroutescreenbutton2 = document.querySelector(".hard-route-screen-button2");
+var hardroutescreen1 = document.querySelector(".hard-route-screen1");
+var hardroutescreen2 = document.querySelector(".hard-route-screen2");
 
+startbutton1.onclick = function () {
+  storyopening1.style.display = "block";
+  startopening.style.display = "none";
+  option1button.style.display = "block";
+  option2button.style.display = "block";
+  controlledbutton.style.display = "block";
+  username = inputusername.value;
+  optionOneText.innerHTML = "Hello " + username + ",Your Job by an anonymous government worker from the national security agency and from the department of defense is to stop the hacker or become the hacker to save or destroy the national security agency's database and by doing that the national security agency will gather analysis on how to protect or prevent another data breach.";
 };
 
-INSERT_VARIABLE.onclick=function(){
-
+option1button.onclick = function () {
+  option1screen.style.display = "block";
+  storyopening1.style.display = "none";
+  option1button.style.display = "none";
+  option2button.style.display = "none";
 };
 
-
-INSERT_VARIABLE.onclick=function(){
-
+option2button.onclick = function () {
+  option2screen.style.display = "block";
+  storyopening1.style.display = "none";
+  option1button.style.display = "none";
+  option2button.style.display = "none";
 };
 
+optiontwoscreenbutton2.onclick = function () {
+  option2screen.style.display = "none";
+  gameendingscreen.style.display = "block";
+};
+
+optiononescreenbutton1.onclick = function () {
+  option1screen.style.display = "none";
+  option3screen.style.display = "block";
+};
+
+option3screenbutton1.onclick = function () {
+  easyroutescreen.style.display = "block";
+  option3screen.style.display = "none";
+};
+
+option3screenbutton2.onclick = function () {
+  hardroutescreen.style.display = "block";
+  option3screen.style.display = "none";
+};
+/* hardroutescreenbutton2.onclick = function() {
+    hardroutescreen.style.display = "none";
+    hardroutescreen1.style.display = "block";
+};
 */
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbImVuZGluZzEiLCJlbmRpbmcyIiwib3BlbmluZzEiLCJvcGVuaW5nMiIsImJ1dHRvbjIiLCJidXR0b24xIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUVBLElBQUlBLE9BQU8sR0FBQyxFQUFaO0FBQ0EsSUFBSUMsT0FBTyxHQUFDLEVBQVo7QUFDQSxJQUFJQyxRQUFRLEdBQUMsRUFBYjtBQUNBLElBQUlDLFFBQVEsR0FBQyxFQUFiO0FBQ0EsSUFBSUMsT0FBTyxHQUFDLEVBQVo7QUFDQSxJQUFJQyxPQUFPLEdBQUMsRUFBWjtBQUlBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi8qIERlY2xhcmUgdmFyaWFibGVzIGJlbG93IHRvIHNhdmUgdGhlIGRpZmZlcmVudCBzZWN0aW9ucyAoZGl2cykgb2YgeW91ciBzdG9yeSAqL1xuXG5sZXQgZW5kaW5nMT1cIlwiO1xubGV0IGVuZGluZzI9XCJcIjtcbmxldCBvcGVuaW5nMT1cIlwiO1xubGV0IG9wZW5pbmcyPVwiXCI7XG5sZXQgYnV0dG9uMj1cIlwiO1xubGV0IGJ1dHRvbjE9XCJcIjtcblxuXG5cbi8qIFdoZW4geW91J3JlIHJlYWR5IHRvIG1ha2UgZXZlbnQgaGFuZGxlcnMsIHVuY29tbWVudCB0aGUgY29kZSBiZWxvdy4gVGhlbiBmaWxsIGluIHRoZSBibGFua3Mgd2l0aCB0aGUgY29ycmVjdCB2YXJpYWJsZXMhXG5JTlNFUlRfVkFSSUFCTEUub25jbGljaz1mdW5jdGlvbigpe1xuXG59O1xuXG5JTlNFUlRfVkFSSUFCTEUub25jbGljaz1mdW5jdGlvbigpe1xuXG59O1xuXG5cbklOU0VSVF9WQVJJQUJMRS5vbmNsaWNrPWZ1bmN0aW9uKCl7XG5cbn07XG5cbiovXG5cblxuIl19</script></body></html>
+
+
+hardroutescreenbutton1.onclick = function () {
+  hardroutescreen.style.display = "block";
+};
+
+function delayAndChange() {
+  setTimeout(function () {
+    document.getElementById('hard-route-screen').style.display = 'none';
+    document.getElementById('hard-route-screen1').style.display = 'block';
+    setTimeout(function () {
+      document.getElementById('hard-route-screen1').style.display = 'none';
+      document.getElementById('gameover').style.display = 'block';
+    }, 2000);
+  }, 2000);
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbImVuZGluZzEiLCJkb2N1bWVudCIsInF1ZXJ5U2VsZWN0b3IiLCJlbmRpbmcyIiwib3B0aW9uMXNjcmVlbiIsIm9wdGlvbjJzY3JlZW4iLCJzdG9yeW9wZW5pbmcxIiwic3RhcnRvcGVuaW5nIiwic3RhcnRidXR0b24xIiwib3B0aW9uMWJ1dHRvbiIsIm9wdGlvbjJidXR0b24iLCJnYW1lZW5kaW5nc2NyZWVuIiwiaW5wdXR1c2VybmFtZSIsInVzZXJuYW1lIiwib3B0aW9uT25lVGV4dCIsImNvbnRyb2xsZWRidXR0b24iLCJvcHRpb24yc2NyZWVuYnV0dG9uMSIsIm9wdGlvbnR3b3NjcmVlbmJ1dHRvbjIiLCJvcHRpb25vbmVzY3JlZW5idXR0b24xIiwib3B0aW9ub25lc2NyZWVuYnV0dG9uMiIsIm9wdGlvbjNzY3JlZW4iLCJvcHRpb24zc2NyZWVuYnV0dG9uMSIsIm9wdGlvbjNzY3JlZW5idXR0b24yIiwiZWFzeXJvdXRlc2NyZWVuIiwiaGFyZHJvdXRlc2NyZWVuIiwiaGFyZHJvdXRlc2NyZWVuYnV0dG9uMSIsImhhcmRyb3V0ZXNjcmVlbmJ1dHRvbjIiLCJoYXJkcm91dGVzY3JlZW4xIiwiaGFyZHJvdXRlc2NyZWVuMiIsIm9uY2xpY2siLCJzdHlsZSIsImRpc3BsYXkiLCJ2YWx1ZSIsImlubmVySFRNTCIsImRlbGF5QW5kQ2hhbmdlIiwic2V0VGltZW91dCIsImdldEVsZW1lbnRCeUlkIl0sIm1hcHBpbmdzIjoiQUFBQSxJQUFJQSxPQUFPLEdBQUdDLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixpQkFBdkIsQ0FBZDtBQUNBLElBQUlDLE9BQU8sR0FBR0YsUUFBUSxDQUFDQyxhQUFULENBQXVCLGlCQUF2QixDQUFkO0FBQ0EsSUFBSUUsYUFBYSxHQUFHSCxRQUFRLENBQUNDLGFBQVQsQ0FBdUIsb0JBQXZCLENBQXBCO0FBQ0EsSUFBSUcsYUFBYSxHQUFHSixRQUFRLENBQUNDLGFBQVQsQ0FBdUIsb0JB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YUFBYSxDQUFDVSxLQUFkLENBQW9CQyxPQUFwQixHQUE4QixNQUE5QjtBQUNILENBSEQ7O0FBSUFULG9CQUFvQixDQUFDTyxPQUFyQixHQUErQixZQUFXO0FBQ3RDTCxFQUFBQSxlQUFlLENBQUNNLEtBQWhCLENBQXNCQyxPQUF0QixHQUFnQyxPQUFoQztBQUNBWCxFQUFBQSxhQUFhLENBQUNVLEtBQWQsQ0FBb0JDLE9BQXBCLEdBQThCLE1BQTlCO0FBQ0gsQ0FIRDtBQUlBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7OztBQUdBTixzQkFBc0IsQ0FBQ0ksT0FBdkIsR0FBaUMsWUFBVztBQUN4Q0wsRUFBQUEsZUFBZSxDQUFDTSxLQUFoQixDQUFzQkMsT0FBdEIsR0FBZ0MsT0FBaEM7QUFDSCxDQUZEOztBQUtBLFNBQVNHLGNBQVQsR0FBMEI7QUFDeEJDLEVBQUFBLFVBQVUsQ0FBQyxZQUFXO0FBQ3BCbEMsSUFBQUEsUUFBUSxDQUFDbUMsY0FBVCxDQUF3QixtQkFBeEIsRUFBNkNOLEtBQTdDLENBQW1EQyxPQUFuRCxHQUE2RCxNQUE3RDtBQUNFOUIsSUFBQUEsUUFBUSxDQUFDbUMsY0FBVCxDQUF3QixvQkFBeEIsRUFBOENOLEtBQTlDLENBQW9EQyxPQUFwRCxHQUE4RCxPQUE5RDtBQUdGSSxJQUFBQSxVQUFVLENBQUMsWUFBVztBQUNwQmxDLE1BQUFBLFFBQVEsQ0FBQ21DLGNBQVQsQ0FBd0Isb0JBQXhCLEVBQThDTixLQUE5QyxDQUFvREMsT0FBcEQsR0FBOEQsTUFBOUQ7QUFDQTlCLE1BQUFBLFFBQVEsQ0FBQ21DLGNBQVQsQ0FBd0IsVUFBeEIsRUFBb0NOLEtBQXBDLENBQTBDQyxPQUExQyxHQUFvRCxPQUFwRDtBQUNELEtBSFMsRUFHUCxJQUhPLENBQVY7QUFJRCxHQVRTLEVBU1AsSUFUTyxDQUFWO0FBVUQiLCJzb3VyY2VzQ29udGVudCI6WyJsZXQgZW5kaW5nMSA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIub3B0aW9uLW9uZS1lbmRcIik7XG5sZXQgZW5kaW5nMiA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIub3B0aW9uLXR3by1lbmRcIik7XG5sZXQgb3B0aW9uMXNjcmVlbiA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIub3B0aW9uLW9uZS1zY3JlZW5cIik7XG5sZXQgb3B0aW9uMnNjcmVlbiA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIub3B0aW9uLXR3by1zY3JlZW5cIik7XG5sZXQgc3RvcnlvcGVuaW5nMSA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuc3Rvcnktb3BlbmluZ1wiKTtcbmxldCBzdGFydG9wZW5pbmcgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnN0YXJ0b3BlbmluZ1wiKTtcbmxldCBzdGFydGJ1dHRvbjEgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnN0YXJ0YnV0dG9uXCIpO1xubGV0IG9wdGlvbjFidXR0b24gPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLm9wdGlvbi1vbmVcIik7XG5sZXQgb3B0aW9uMmJ1dHRvbiA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIub3B0aW9uLXR3b1wiKTtcbmxldCBnYW1lZW5kaW5nc2NyZWVuID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5nYW1lb3ZlclwiKTtcbmxldCBpbnB1dHVzZXJuYW1lID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcImlucHV0XCIpO1xubGV0IHVzZXJuYW1lO1xubGV0IG9wdGlvbk9uZVRleHQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLm9wdGlvbi1vbmUtdGV4dFwiKTtcbmxldCBjb250cm9sbGVkYnV0dG9uID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5idXR0b25zXCIpO1xubGV0IG9wdGlvbjJzY3JlZW5idXR0b24xID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5vcHRpb24tdHdvLXNjcmVlbi1idXR0b24xXCIpO1xubGV0IG9wdGlvbnR3b3NjcmVlbmJ1dHRvbjIgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLm9wdGlvbi10d28tc2NyZWVuLWJ1dHRvbjJcIik7XG5sZXQgb3B0aW9ub25lc2NyZWVuYnV0dG9uMSA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIub3B0aW9uLW9uZS1zY3JlZW4tYnV0dG9uMVwiKTtcbmxldCBvcHRpb25vbmVzY3JlZW5idXR0b24yID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5vcHRpb24tb25lLXNjcmVlbi1idXR0b24yXCIpO1xubGV0IG9wdGlvbjNzY3JlZW4gPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLm9wdGlvbi10aHJlZS1zY3JlZW5cIik7XG5sZXQgb3B0aW9uM3NjcmVlbmJ1dHRvbjEgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLm9wdGlvbi10aHJlZS1zY3JlZW4tYnV0dG9uMVwiKTtcbmxldCBvcHRpb24zc2NyZWVuYnV0dG9uMiA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIub3B0aW9uLXRocmVlLXNjcmVlbi1idXR0b24yXCIpO1xubGV0IGVhc3lyb3V0ZXNjcmVlbiA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuZWFzeS1yb3V0ZS1zY3JlZW5cIik7XG5sZXQgaGFyZHJvdXRlc2NyZWVuID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5oYXJkLXJvdXRlLXNjcmVlblwiKTtcbmxldCBoYXJkcm91dGVzY3JlZW5idXR0b24xID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5oYXJkLXJvdXRlLXNjcmVlbi1idXR0b24xXCIpO1xubGV0IGhhcmRyb3V0ZXNjcmVlbmJ1dHRvbjIgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLmhhcmQtcm91dGUtc2NyZWVuLWJ1dHRvbjJcIik7XG5sZXQgaGFyZHJvdXRlc2NyZWVuMSA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuaGFyZC1yb3V0ZS1zY3JlZW4xXCIpO1xubGV0IGhhcmRyb3V0ZXNjcmVlbjIgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLmhhcmQtcm91dGUtc2NyZWVuMlwiKTtcbnN0YXJ0YnV0dG9uMS5vbmNsaWNrID0gZnVuY3Rpb24oKSB7XG4gICAgc3RvcnlvcGVuaW5nMS5zdHlsZS5kaXNwbGF5ID0gXCJibG9ja1wiO1xuICAgIHN0YXJ0b3BlbmluZy5zdHlsZS5kaXNwbGF5ID0gXCJub25lXCI7XG4gICAgb3B0aW9uMWJ1dHRvbi5zdHlsZS5kaXNwbGF5ID0gXCJibG9ja1wiO1xuICAgIG9wdGlvbjJidXR0b24uc3R5bGUuZGlzcGxheSA9IFwiYmxvY2tcIjtcbiAgICBjb250cm9sbGVkYnV0dG9uLnN0eWxlLmRpc3BsYXkgPSBcImJsb2NrXCI7XG4gICAgdXNlcm5hbWUgPSBpbnB1dHVzZXJuYW1lLnZhbHVlO1xuICAgIG9wdGlvbk9uZVRleHQuaW5uZXJIVE1MID0gXCJIZWxsbyBcIiArIHVzZXJuYW1lICsgXCIsWW91ciBKb2IgYnkgYW4gYW5vbnltb3VzIGdvdmVybm1lbnQgd29ya2VyIGZyb20gdGhlIG5hdGlvbmFsIHNlY3VyaXR5IGFnZW5jeSBhbmQgZnJvbSB0aGUgZGVwYXJ0bWVudCBvZiBkZWZlbnNlIGlzIHRvIHN0b3AgdGhlIGhhY2tlciBvciBiZWNvbWUgdGhlIGhhY2tlciB0byBzYXZlIG9yIGRlc3Ryb3kgdGhlIG5hdGlvbmFsIHNlY3VyaXR5IGFnZW5jeSdzIGRhdGFiYXNlIGFuZCBieSBkb2luZyB0aGF0IHRoZSBuYXRpb25hbCBzZWN1cml0eSBhZ2VuY3kgd2lsbCBnYXRoZXIgYW5hbHlzaXMgb24gaG93IHRvIHByb3RlY3Qgb3IgcHJldmVudCBhbm90aGVyIGRhdGEgYnJlYWNoLlwiO1xuXG59O1xuXG5vcHRpb24xYnV0dG9uLm9uY2xpY2sgPSBmdW5jdGlvbigpIHtcbiAgICBvcHRpb24xc2NyZWVuLnN0eWxlLmRpc3BsYXkgPSBcImJsb2NrXCI7XG4gICAgc3RvcnlvcGVuaW5nMS5zdHlsZS5kaXNwbGF5ID0gXCJub25lXCI7XG4gICAgb3B0aW9uMWJ1dHRvbi5zdHlsZS5kaXNwbGF5ID0gXCJub25lXCI7XG4gICAgb3B0aW9uMmJ1dHRvbi5zdHlsZS5kaXNwbGF5ID0gXCJub25lXCI7XG59O1xub3B0aW9uMmJ1dHRvbi5vbmNsaWNrID0gZnVuY3Rpb24oKSB7XG4gICAgb3B0aW9uMnNjcmVlbi5zdHlsZS5kaXNwbGF5ID0gXCJibG9ja1wiO1xuICAgIHN0b3J5b3BlbmluZzEuc3R5bGUuZGlzcGxheSA9IFwibm9uZVwiO1xuICAgIG9wdGlvbjFidXR0b24uc3R5bGUuZGlzcGxheSA9IFwibm9uZVwiO1xuICAgIG9wdGlvbjJidXR0b24uc3R5bGUuZGlzcGxheSA9IFwibm9uZVwiO1xufTtcblxub3B0aW9udHdvc2NyZWVuYnV0dG9uMi5vbmNsaWNrID0gZnVuY3Rpb24oKSB7XG4gICAgb3B0aW9uMnNjcmVlbi5zdHlsZS5kaXNwbGF5ID0gXCJub25lXCI7XG4gICAgZ2FtZWVuZGluZ3NjcmVlbi5zdHlsZS5kaXNwbGF5ID0gXCJibG9ja1wiO1xuXG59O1xub3B0aW9ub25lc2NyZWVuYnV0dG9uMS5vbmNsaWNrID0gZnVuY3Rpb24oKSB7XG4gICAgb3B0aW9uMXNjcmVlbi5zdHlsZS5kaXNwbGF5ID0gXCJub25lXCI7XG4gICAgb3B0aW9uM3NjcmVlbi5zdHlsZS5kaXNwbGF5ID0gXCJibG9ja1wiO1xuXG59O1xub3B0aW9uM3NjcmVlbmJ1dHRvbjEub25jbGljayA9IGZ1bmN0aW9uKCkge1xuICAgIGVhc3lyb3V0ZXNjcmVlbi5zdHlsZS5kaXNwbGF5ID0gXCJibG9ja1wiO1xuICAgIG9wdGlvbjNzY3JlZW4uc3R5bGUuZGlzcGxheSA9IFwibm9uZVwiO1xufTtcbm9wdGlvbjNzY3JlZW5idXR0b24yLm9uY2xpY2sgPSBmdW5jdGlvbigpIHtcbiAgICBoYXJkcm91dGVzY3JlZW4uc3R5bGUuZGlzcGxheSA9IFwiYmxvY2tcIjtcbiAgICBvcHRpb24zc2NyZWVuLnN0eWxlLmRpc3BsYXkgPSBcIm5vbmVcIjtcbn07XG4vKiBoYXJkcm91dGVzY3JlZW5idXR0b24yLm9uY2xpY2sgPSBmdW5jdGlvbigpIHtcbiAgICBoYXJkcm91dGVzY3JlZW4uc3R5bGUuZGlzcGxheSA9IFwibm9uZVwiO1xuICAgIGhhcmRyb3V0ZXNjcmVlbjEuc3R5bGUuZGlzcGxheSA9IFwiYmxvY2tcIjtcbn07XG4qL1xuXG5cbmhhcmRyb3V0ZXNjcmVlbmJ1dHRvbjEub25jbGljayA9IGZ1bmN0aW9uKCkge1xuICAgIGhhcmRyb3V0ZXNjcmVlbi5zdHlsZS5kaXNwbGF5ID0gXCJibG9ja1wiO1xufTtcblxuXG5mdW5jdGlvbiBkZWxheUFuZENoYW5nZSgpIHtcbiAgc2V0VGltZW91dChmdW5jdGlvbigpIHtcbiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnaGFyZC1yb3V0ZS1zY3JlZW4nKS5zdHlsZS5kaXNwbGF5ID0gJ25vbmUnO1xuICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2hhcmQtcm91dGUtc2NyZWVuMScpLnN0eWxlLmRpc3BsYXkgPSAnYmxvY2snO1xuICAgIFxuXG4gICAgc2V0VGltZW91dChmdW5jdGlvbigpIHtcbiAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdoYXJkLXJvdXRlLXNjcmVlbjEnKS5zdHlsZS5kaXNwbGF5ID0gJ25vbmUnO1xuICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2dhbWVvdmVyJykuc3R5bGUuZGlzcGxheSA9ICdibG9jayc7XG4gICAgfSwgMjAwMCk7IFxuICB9LCAyMDAwKTsgXG59Il19</script></body></html>
