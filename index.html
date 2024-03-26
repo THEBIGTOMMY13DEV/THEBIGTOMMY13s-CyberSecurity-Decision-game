@@ -4,26 +4,65 @@
         <title>THEBIGTOMMY13's CyberSecurity Decision game</title>
     </head>
     <body>
-        <!--Between lines 8-12, put the opening of your story-->
         <div class="title">Infiltration: A Cybersecurity Challenge</div>
         <div class="story-opening">
-            <img src="https://cdn.glitch.global/9d066a26-dbcb-4aa3-b1af-3cd59e251b0c/placeholder.jpeg?v=1657576139439">
-            <h1>Your Job by an anonymous government worker from the national security agency and from the department of defense is to stop the hacker or become the hacker to save or destroy the national security agency's database and by doing that the national security agency will gather analysis on how to protect or prevent another data breach.</h1>
+
+            <h1 class="option-one-text">Your Job by an anonymous government worker from the national security agency and from the department of defense is to stop the hacker or become the hacker to save or destroy the national security agency's database and by doing that the national security agency will gather analysis on how to protect or prevent another data breach.</h1>
         </div>
-        <!--Change the text of the buttons to the options relevant to your story!-->
+
+        <div class="startopening">
+            <img class="startimage" src="https://positivethinking.tech/wp-content/uploads/2022/02/CoverYoutube_MotionCyberSecurity.png">
+            <form>
+                <label for="username">Enter A Username Here:</label>
+                <input type="text" id="username" name="username"><br>
+                <br>
+
+            </form>
+            <button class="startbutton">Ready to Start the Game?</button>
+
+        </div>
         <div class="buttons">
             <button class="option-one">Become The Hacker?</button>
             <button class="option-two">Become the Cyber Security Specialist?</button>
         </div>
         <!--Between lines 19-22, put the part of the story the user will see if they picked option one-->
         <div class="option-one-screen">
-            <h1>You are a hacker recruited by the Department of Defense and their is a cyber attack occuring in the mainframe of the nsa your job is to stop this hacker from compromising the NSA's secrets.</h1>
-            <img src="https://cdn.glitch.global/9d066a26-dbcb-4aa3-b1af-3cd59e251b0c/placeholder.jpeg?v=1657576139439">
+            <h1>You are a hacker recruited by the Department of Defense and their is a cyber attack occuring in the mainframe of the nsa your job is to stop this hacker from compromising the NSA's secrets,are you up for the challenge?</h1>
+            <button class="option-one-screen-button1">Yes?</button>
+            <button class="option-one-screen-button2">No?</button>
+            <img src="https://www.dfs.ny.gov/sites/default/files/media/2022/01/iStock-901609212_cyber_security.jpg">
+
         </div>
         <!--Between lines 24-27, put the part of the story the user will see if they picked option two-->
         <div class="option-two-screen">
-            <h1>Your mission is to protect the NSA’s secured documents on an online database are you up for the challenge? Yes or no</h1>
-            <img src="https://cdn.glitch.global/9d066a26-dbcb-4aa3-b1af-3cd59e251b0c/placeholder.jpeg?v=1657576139439">
+            <h1>Your mission is to protect the NSA’s secured documents on an online database are you up for the challenge?</h1>
+            <img src="https://media.wired.com/photos/59326fb2edfced5820d1066c/master/w_1600%2Cc_limit/1-jan-3-2014-fisa-order-no-telco-names.jpg">
+            <div class="option-two-buttons">
+                <button class="option-two-screen-button1">Yes?</button>
+                <button class="option-two-screen-button2">No?</button>
+            </div>
+        </div>
+        <div class="option-three-screen">
+            <h1>You Encounter A flaw in the system Do you want to go the Easy Route Or the Extremely hard route?</h1>
+            <button class="option-three-screen-button1">Take The Easy Route?</button>
+            <button class="option-three-screen-button2">Take The Hard Route?</button>
+
+        </div>
+        <div id="hard-route-screen" class="hard-route-screen">
+            <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i1cefn5pA62w/v0/-1x-1.jpg">
+            <h1>You Go inside the Nsa's security building where the database is located and You have an option to go inside as a hacker man or as a staff member. Which Do You Choose? </h1>
+            <button id="buttonfunction" onclick="setTimeout(delayAndChange, 3000);">Try it</button>
+            <button class="hard-route-screen-button1">Go in the building as a Masked hacker?</button>
+            <button id="hardroutebutton" class="hard-route-screen-button2">Go Disguise as a Staff of an Nsa Member?</button>
+
+        </div>
+        <div id="hard-route-screen1" class="hard-route-screen1">
+            <h1>You Go inside the Nsa's security building as a staff member. You Walk to the server room and get your laptop out and successfully extract the documents that the nsa has been hiding Good Job :) </h1>
+        </div>
+        <div class="hard-route-screen2">
+        </div>
+        <div class="easy-route-screen">
+            <h1>You Use Kali Linux to find A vulnerability in one of the Nsa's secure servers and ssh into it and get the files successfully! Good Job Hacker:) </h1>
         </div>
         <!--Between lines 29-32, put the end of the story if the user chose option 1-->
         <div class="option-one-end">
@@ -34,6 +73,10 @@
         <div class="option-two-end">
             <h1>You have not gotten the NSA’s secret documents and You Have successfully completed the hacker mission of getting the NSA’s documents.</h1>
             <img src="https://cdn.glitch.global/9d066a26-dbcb-4aa3-b1af-3cd59e251b0c/placeholder.jpeg?v=1657576139439">
+            <div id="gameover"  class="gameover">
+                <h1>Game is over you have won! </h1>
+                <img class="gameover-image" src="https://static.vecteezy.com/system/resources/thumbnails/014/894/538/small/8-bit-pixel-text-game-over-background-icon-for-game-assets-in-illustrations-vector.jpg">
+            </div>
         </div>
     </body>
 </html>
