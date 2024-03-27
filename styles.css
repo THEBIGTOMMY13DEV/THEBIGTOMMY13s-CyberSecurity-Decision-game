@@ -1,115 +1,131 @@
 body {
-    text-align: center;
-    background-color: black;
-    color: white;
+ text-align: center;
+ background-color: black;
+ color: white;
 }
 
 img {
-    width: 350px;
+ width: 350px;
+}
+.gameover-image{
+  margin-left: auto;
+  margin-right: auto;
+  height:auto;
+  width:auto;
 }
 
 .title {
-    font-size: 50px;
-    font-weight: 800;
+  font-family: 'Source Sans Pro', san-serif;
+ font-size: 50px;
+ font-weight: 800;
 }
 
 .buttons {
-    display: flex;
-    justify-content: center;
+ display: flex;
+ justify-content: center;
 
 }
 
 p {
-    font-size: 30px;
-    font-weight: 800;
+ font-size: 30px;
+ font-weight: 800;
 }
 
 
 button {
-    height: 40px;
-    color: white;
-    background-color: black;
+ height: 40px;
+ color: white;
+ background-color: black;
 }
 
 
 h1 {
-    font-size: 50px;
-    color: white;
+ font-size: 50px;
+ color: white;
 }
 
 
 
 .story-opening {
-    display: none;
+ display: none;
 }
 
 
 
 .buttons {
-    display: none;
+ display: none;
 }
 
 
 
 .option-one-screen {
-    display: none;
+ display: none;
 }
 
 
 
 .option-two-screen {
-    display: none;
+ display: none;
 }
 
 
 
 .option-one-end {
-    display: none;
+ display: none;
 }
 
 
 
 .option-two-end {
-    display: none;
+ display: none;
 }
 
 .option-one {
-    display: none;
+ display: none;
 }
 
 .option-two {
-    display: none;
+ display: none;
 }
 
 .startbutton {
-    height: 50px;
-    color: white;
-    background-color: black;
-    font-size: 50px;
-    text-align: center;
+ height: 50px;
+ color: white;
+ background-color: black;
+ font-size: 50px;
+ text-align: center;
 }
 
 .startimage {
-    height: auto;
-    width: auto;
+ height: auto;
+ width: auto;
 }
 
 .gameover{
-    display: none;
+ display: none;
+}
+.gameoveryoulose {
+ display: none;
 }
 
 .option-three-screen {
-    display: none;
+ display: none;
 }
 
 .easy-route-screen {
-    display: none;
+ display: none;
 }
 
 .hard-route-screen {
-    display: none;
+ display: none;
 }
 
 .hard-route-screen1 {
-    display: none;
+ display: none;
 }
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./fonts/SourceSansProBold.otf') format('opentype');
+}
+.startopening{display:block;}

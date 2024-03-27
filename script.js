@@ -22,72 +22,68 @@ let option3screenbutton2 = document.querySelector(".option-three-screen-button2"
 let easyroutescreen = document.querySelector(".easy-route-screen");
 let hardroutescreen = document.querySelector(".hard-route-screen");
 let hardroutescreenbutton1 = document.querySelector(".hard-route-screen-button1");
-let hardroutescreenbutton2 = document.querySelector(".hard-route-screen-button2");
 let hardroutescreen1 = document.querySelector(".hard-route-screen1");
 let hardroutescreen2 = document.querySelector(".hard-route-screen2");
+let gameoverscreenbutton1 = document.querySelector(".gameoverscreenbuttonused");
+let gameoverscreenbutton2 = document.querySelector(".gameoverscreenbuttonused2");
+let titlescreenbutton1= document.querySelector(".title");
 startbutton1.onclick = function() {
-    storyopening1.style.display = "block";
-    startopening.style.display = "none";
-    option1button.style.display = "block";
-    option2button.style.display = "block";
-    controlledbutton.style.display = "block";
-    username = inputusername.value;
-    optionOneText.innerHTML = "Hello " + username + ",Your Job by an anonymous government worker from the national security agency and from the department of defense is to stop the hacker or become the hacker to save or destroy the national security agency's database and by doing that the national security agency will gather analysis on how to protect or prevent another data breach.";
+  storyopening1.style.display = "block";
+  startopening.style.display = "none";
+  option1button.style.display = "block";
+  option2button.style.display = "block";
+  controlledbutton.style.display = "block";
+  username = inputusername.value;
+  optionOneText.innerHTML = "Hello " + username + ",Your Job by an anonymous government worker from the national security agency and from the department of defense is to stop the hacker or become the hacker to save or destroy the national security agency's database and by doing that the national security agency will gather analysis on how to protect or prevent another data breach.";
 
 };
 
 option1button.onclick = function() {
-    option1screen.style.display = "block";
-    storyopening1.style.display = "none";
-    option1button.style.display = "none";
-    option2button.style.display = "none";
+  option1screen.style.display = "block";
+  storyopening1.style.display = "none";
+  option1button.style.display = "none";
+  option2button.style.display = "none";
 };
 option2button.onclick = function() {
-    option2screen.style.display = "block";
-    storyopening1.style.display = "none";
-    option1button.style.display = "none";
-    option2button.style.display = "none";
+  option2screen.style.display = "block";
+  storyopening1.style.display = "none";
+  option1button.style.display = "none";
+  option2button.style.display = "none";
 };
 
 optiontwoscreenbutton2.onclick = function() {
-    option2screen.style.display = "none";
-    gameendingscreen.style.display = "block";
+  option2screen.style.display = "none";
+  gameendingscreen.style.display = "block";
 
 };
 optiononescreenbutton1.onclick = function() {
-    option1screen.style.display = "none";
-    option3screen.style.display = "block";
+  option1screen.style.display = "none";
+  option3screen.style.display = "block";
 
 };
 option3screenbutton1.onclick = function() {
-    easyroutescreen.style.display = "block";
-    option3screen.style.display = "none";
+  easyroutescreen.style.display = "block";
+  option3screen.style.display = "none";
 };
 option3screenbutton2.onclick = function() {
-    hardroutescreen.style.display = "block";
-    option3screen.style.display = "none";
+  hardroutescreen.style.display = "block";
+  option3screen.style.display = "none";
 };
-/* hardroutescreenbutton2.onclick = function() {
-    hardroutescreen.style.display = "none";
-    hardroutescreen1.style.display = "block";
-};
-*/
-
-
 hardroutescreenbutton1.onclick = function() {
-    hardroutescreen.style.display = "block";
+  hardroutescreen.style.display = "block";
 };
-
-
 function delayAndChange() {
-  setTimeout(function() {
-    document.getElementById('hard-route-screen').style.display = 'none';
-      document.getElementById('hard-route-screen1').style.display = 'block';
-    
-
-    setTimeout(function() {
-      document.getElementById('hard-route-screen1').style.display = 'none';
-      document.getElementById('gameover').style.display = 'block';
-    }, 2000); 
+ setTimeout(function() {
+  document.getElementById('hard-route-screen').style.display = 'none';
+   document.getElementById('hard-route-screen1').style.display = 'block';
+  
+   setTimeout(function() {
+   document.getElementById('hard-route-screen1').style.display = 'none';
+   document.getElementById('gameover').style.display = 'block';
   }, 2000); 
+ }, 2000); 
 }
+gameoverscreenbutton1.onclick = function() {
+  gameendingscreen.style.display='none';
+  
+};
